@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all" : "imaginariummod:block/cracked_portal_block"
+  }
+}

@@ -1,6 +1,7 @@
 package net.liferquest.imaginarium;
 
 import com.mojang.logging.LogUtils;
+import net.liferquest.imaginarium.block.ModBlocks;
 import net.liferquest.imaginarium.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -34,6 +35,7 @@ public class Imaginarium {
         MinecraftForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -50,8 +52,13 @@ public class Imaginarium {
         if(event.getTabKey() == CreativeModeTabs.COMBAT){
             event.accept(ModItems.TEST_TOTEM);
         }
-        else if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
+
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.RED_PAINT_TUBE);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept(ModBlocks.CRACKED_PORTAL_BLOCK);
         }
     }
 

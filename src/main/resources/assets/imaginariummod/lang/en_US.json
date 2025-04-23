@@ -1,4 +1,6 @@
 {
   "item.imaginariummod.test_totem": "Test Totem",
-  "item.imaginariummod.red_paint_tube": "Red Paint Tube"
+  "item.imaginariummod.red_paint_tube": "Red Paint Tube",
+
+  "block.imaginariummod.cracked_portal_block": "Cracked Portal Block"
 }
