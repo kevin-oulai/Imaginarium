@@ -2,6 +2,7 @@ package net.liferquest.imaginarium;
 
 import com.mojang.logging.LogUtils;
 import net.liferquest.imaginarium.block.ModBlocks;
+import net.liferquest.imaginarium.item.ModCreativeModTabs;
 import net.liferquest.imaginarium.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -33,6 +34,8 @@ public class Imaginarium {
         modEventBus.addListener(this::commonSetup);
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+
+        ModCreativeModTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
