@@ -67,11 +67,11 @@
 ---
 
 ## ✅ Modèle de développement (Forge)
-- API : Forge 1.20.1
-- Java 17
+- API : Forge 1.21.X
+- Java 21
 - Base fonctionnelle avec item et bloc test
 - Nom du mod : **Imaginarium**
-- Mod ID : `imaginarium`
+- Mod ID : `imaginariummod`
 
 ---
 
