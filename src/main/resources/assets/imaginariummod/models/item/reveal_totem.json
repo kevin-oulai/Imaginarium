@@ -1,0 +1,6 @@
+{
+  "parent" : "minecraft:item/generated",
+  "textures": {
+    "layer0": "imaginariummod:item/reveal_totem"
+  }
+}

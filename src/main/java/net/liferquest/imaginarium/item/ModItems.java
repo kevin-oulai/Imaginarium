@@ -11,8 +11,15 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, Imaginarium.MOD_ID);
 
-    public static final RegistryObject<Item> TEST_TOTEM = ITEMS.register("test_totem",
+    public static final RegistryObject<Item> REVEAL_TOTEM = ITEMS.register("reveal_totem",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CREATION_TOTEM = ITEMS.register("creation_totem",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SCULPTURE_TOTEM = ITEMS.register("sculpture_totem",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> METAMORPHOSIS_TOTEM = ITEMS.register("metamorphosis_totem",
+            () -> new Item(new Item.Properties()));
+
     public static final RegistryObject<Item> RED_PAINT_TUBE = ITEMS.register("red_paint_tube",
             () -> new Item(new Item.Properties()));
 

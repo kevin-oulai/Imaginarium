@@ -1,6 +1,6 @@
 {
   "parent" : "minecraft:item/generated",
   "textures": {
-    "layer0": "imaginariummod:item/test_totem"
+    "layer0": "imaginariummod:item/sculpture_totem"
   }
 }

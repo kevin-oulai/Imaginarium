@@ -15,10 +15,13 @@ public class ModCreativeModTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Imaginarium.MOD_ID);
 
     public static final RegistryObject<CreativeModeTab> SPECIAL_TOTEMS_TAB = CREATIVE_MODE_TABS.register(
-            "special_totems_tab", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.TEST_TOTEM.get()))
+            "special_totems_tab", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.CREATION_TOTEM.get()))
                     .title(Component.translatable("creativetab.imaginarium.special_totems"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModItems.TEST_TOTEM.get());
+                        output.accept(ModItems.CREATION_TOTEM.get());
+                        output.accept(ModItems.REVEAL_TOTEM.get());
+                        output.accept(ModItems.SCULPTURE_TOTEM.get());
+                        output.accept(ModItems.METAMORPHOSIS_TOTEM.get());
                     })
                     .build()
     );
